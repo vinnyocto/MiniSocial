@@ -16,9 +16,9 @@ app.use(cors({
 app.use(express.json());
 
 // Routes
-app.use('/api/auth',  require('./routes/auth'));
-app.use('/api/posts', require('./routes/posts'));
-app.use('/api/users', require('./routes/users'));
+app.use('/api/auth',  require('./auth'));
+app.use('/api/posts', require('./posts'));
+app.use('/api/users', require('./users'));
 
 // Health check — Railway/Render ping this to confirm the server is alive
 app.get('/health', (req, res) => res.json({ status: 'ok' }));
