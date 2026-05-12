@@ -1,6 +1,6 @@
 // ── Config ──────────────────────────────────────────────
 // Replace this with your deployed Railway/Render backend URL
-const API_BASE = ''; // same Render app / same website
+const API_BASE = 'https://minisocial-2.onrender.com'; // same Render app / same website
 
 // ── Token helpers ────────────────────────────────────────
 function getToken()  { return localStorage.getItem('ms_token'); }
